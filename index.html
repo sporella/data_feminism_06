@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Los datos no hablan por sí mismos</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Stephanie Orellana" />
+    <meta name="date" content="2021-11-25" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+
+name: hola
+class: title-slide, middle, center
+background-image: url("img/cover.png")
+
+# Los datos no hablan por sí mismos
+
+## Stephanie Orellana
+
+&lt;br&gt;&lt;/br&gt;
+### R-Ladies Chile
+
+---
+class: inverse, middle
+
+# Principio: ***Considera el contexto***
+
+--
+
+El feminismo de datos afirma que **los datos no son neutrales ni objetivos**. Son el producto de relaciones sociales desiguales y este contexto es esencial para realizar un análisis ético preciso.
+
+---
+class: inverse, middle
+
+# Concepto clave 1: ***Big Dick Data***
+
+Es un término académico formal acuñado por las autoras para denotar proyectos de big data que se caracterizan por **fantasías** patriarquiales, cis-masculinistas y totalizadoras de dominación mundial que se llevan a cabo a través de la captura y el análisis de datos. Los proyectos de Big Dick Data **ignoran el contexto**, **fetichizan el tamaño** e **inflan sus capacidades técnicas y científicas.**
+
+---
+class: middle
+
+
+# Ejemplo: ***FiveThirtyEight***
+
+--
+
+- Secuestro de 276 mujeres jóvenes desde un colegio en Nigeria en abril del 2014.
+
+--
+
+- Creciente demanda en todo el mundo por exigir su liberación y el actuar del gobierno.
+
+&lt;img src="img/nigeria1.jpg" width="50%" /&gt;&lt;img src="img/nigeria2.jpg" width="50%" /&gt;
+
+---
+class: middle
+
+- FiveThirtyEight publica en su blog un artículo basado en datos denominado "El secuestro de niñas en Nigeria es parte de un problema que empeora" acompañado de gráficos y mapas que dan cuenta de dicha realidad. 
+
+--
+
+- Los datos fueron obtenidos desde Global Database of Events, Language and Tone (GDELT). Una base de datos abiertos que recopila eventos desde publicaciones en la prensa.
+
+--
+
+&lt;img src="img/nigeria_plot.png" width="45%" style="display: block; margin: auto;" /&gt;
+
+---
+class: middle
+
+# GDELT
+
+--
+
+_GDELT es “una iniciativa para construir un catálogo de comportamientos y creencias a escala social humana en todos los países del mundo, conectando a cada persona, organización, ubicación, recuento, tema, fuente de noticias y evento en todo el planeta en una única red masiva que captura lo que está sucediendo en todo el mundo, cuál es su contexto y quiénes están involucrados, y cómo se siente el mundo al respecto, todos los días "._
+
+---
+class: middle
+
+# Pero...
+
+- Parte del equipo de GDELT llegó a aclarar el contexto de la base de datos.
+
+&lt;img src="img/nigeria3.jpg" width="50%" /&gt;&lt;img src="img/nigeria4.jpg" width="50%" /&gt;
+
+---
+class: inverse, middle
+
+# Lecciones:
+
+--
+
+- Cuidado al encontrar datos en Internet sin investigar su fuente y contexto de adquisición.
+
+--
+
+- Debemos tener cuidado con "el set de datos soñado".
+
+--
+
+- No analizar los datos desde el prejuicio.
+
+--
+
+- ¿Cuánta responsabilidad tiene quien disponibiliza los datos y cuánta quién los utiliza?
+
+---
+class: inverse, middle
+
+--
+
+# Concepto clave 2: ***Infraestructura del Conocimiento***
+
+Lo que Christine Borgamn define como “una ecología de personas, prácticas, tecnologías, instituciones, objetos materiales y relaciones” o el contexto que hace posible los datos.
+
+--
+
+# Concepto clave 3: ***Datos abiertos***
+
+La idea de que cualquier persona puede acceder, usar, modificar y compartir datos libremente para cualquier propósito.
+
+---
+class: middle
+
+# Ejemplo: datos abiertos
+
+--
+
+- Muchos países y organizaciones publican datos en Internet bajo el concepto de Datos Abiertos en portales bastante sofisticados (con todo el marketing que esto conlleva).
+
+--
+
+- Pero, ¿se publica también información sobre el contexto de adquisición, las metodologías utilizadas, los posibles sesgos, la información faltante, etc.? En la gran mayoría de los casos la respuesta es **NO.**
+
+--
+
+- La realidad es que muchos conjuntos de datos publicados permanecen inactivos en sus portales, esperando que los usuarios emprendan el trabajo intensivo de descifrar su significado. Este fenómeno se ha denominado **datos zombies**: conjuntos de datos que se han publicado sin ningún propósito o caso de uso claro en mente.
+
+---
+class: middle
+
+# Pero, ¿son tan malos los datos zombies?
+
+- Según Chris Anderson el editor de la revista "Wired" (revista y sitio de noticias que trata de reflejar la manera en que la tecnología afecta a la cultura, a la educación, a la economía y a la política.) la respuesta es **NO**.
+
+- El postula que **"los datos hablan por sí mismos"** y que en el contexto de "Big Data" los científicos podrían hacer análisis de una población completa sin tener que restringirse a una muestra representativa.
+
+---
+class: inverse, middle
+
+# Concepto clave 4: ***Inferencia Estadística***
+
+La teoría de que se puede inferir cosas sobre una población al estudiar una muestra aleatoria y/o representativa y luego mapear esos hallazgos sobre la población en su conjunto.
+
+---
+class: middle
+# Siguiendo con los datos zombies
+
+--
+
+- Anderson postula que si logramos recolectar la información de la población completa no necesitaremos ningún tipo de modelo o prueba de hipótesis, tendremos que sólo ver los datos por sí mismos. Su mayor ejemplo es el algoritmo de búsqueda de Google.
+
+--
+
+- Esta es una afirmación controversial porque va en contra de la metodología de investigación y la estadística.
+
+--
+
+- Pero también es controversial tomando en consideración el contexto de adquisición de los datos y los sesgos con que son desarrollados los algoritmos. Por ejemplo, el algoritmo de búsqueda de Google perpetúa el racismo y el sexismo al fomentar que los usuarios entren a los sitios más populares en desmedro de aquellos con menos visitas (siempre se visita el más visitado).
+
+---
+# &lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"&gt;&lt;/path&gt;&lt;/svg&gt; Ejemplo: Jeanne Cleary
+
+--
+
+- En abril de 1986, Jeanne Cleary fue abusada sexualmente y asesinada en su dormitorio en la Universidad de Lehigh, Estados Unidos.
+
+--
+
+- Tiempo después, sus padres se enteraron de que habían habido 38 crímenes violentos con anterioridad en Lehigh, información que no se había considerado de relevancia para los padres o el público general.
+
+--
+
+- Entonces, ellos comenzaron una campaña para mejorar la recolección de datos y mejorar los esfuerzos en contra de los crímenes violentos en campus universitarios.
+
+--
+
+- En la actualidad se cuenta con un set de datos que reporta todos estos eventos en todas la Universidades de los Estados Unidos (autoreportado).
+
+--
+
+- ¿Son las Universidades que más reportan hechos violentos las más inseguras/hostiles?
+
+---
+# &lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"&gt;&lt;/path&gt;&lt;/svg&gt; ¿Qué dicen estos datos?
+
+&lt;img src="img/clery.jpg" width="45%" style="display: block; margin: auto;" /&gt;
+
+---
+class: inverse, middle
+
+# Lecciones:
+
+--
+
+- Sesgos de los datos autoreportados por instituciones.
+
+--
+
+- Cómo influye el contexto para que las víctimas reporten.
+
+--
+
+- Dejar que "los datos hablen por sí mismos" sin saber las lógicas de poder en su contexto de adquisición nos puede llevar a conclusiones erróneas y a seguir perpetuando lógicas discriminatorias y hostiles.
+
+---
+
+class: inverse, middle
+
+# Concepto clave 4: ***Conocimiento Subyugado***
+
+Este término describe las formas de conocimiento que se han expulsado de las instituciones principales y las conversaciones que fomentan. El conocimiento subyugado es el conocimiento que no se toma en serio, se descarta o se ignora, y que incluso es visto como irrelevante y sin importancia por aquellos que están posicionados para influir en lo que se considera "aceptable".
+
+---
+class: middle
+
+# Ejemplo: Thomas Jefferson
+
+--
+
+- Thomas Jefferson fue el tercer presidente de los Estados Unidos de América, ocupando el cargo entre 1801 y 1809. Se le considera uno de los padres fundadores de la nación.
+
+--
+- Es conocido por ser el primer _foodie_ (founding foodie) por ser una persona aficionada a la comida lo cual dejó de manifiesto en muchas de sus cartas.
+
+--
+
+- Pero pocos saben que contó con personal de cocina esclavizado para preparar su famosa comida.
+
+---
+&lt;img src="img/thomas.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+En "La imagen de la ausencia" (2013), Lauren F. Klein utilizó técnicas de aprendizaje automático para identificar los nombres de las personas que Thomas Jefferson mencionó en su correspondencia personal y luego visualizó las relaciones entre ellas. El resultado demuestra todo el trabajo que su personal esclavizado puso en la preparación de las comidas de Jefferson, pero que Jefferson no reconoció directamente. Visualización de Lauren F. Klein.
+
+---
+class: middle
+
+# Ejemplo: Lenguaje de los jóvenes
+
+--
+
+- Un investigador del laboratorio SAFElab en Columbia utiliza inteligencia artificial para examinar las formas en que los adolescentes de color sufren violencia tanto en línea como en su día a día.
+
+--
+
+- Su equipo usa datos de Twitter para entender y prevenir la violencia de bandas en Chicago. Su cantidad de datos es grande (Big Data) lo cual supone complicaciones tanto técnicas como sociales. Además, están conscientes que este tipo de investigaciones han sido mal utilizadas en contra de la población de color.
+
+--
+
+- Pero el investigador principal da cuenta de un problema aún más básico: ***"No sabemos cómo hablan los jóvenes"***, es necesario conocer el contexto (social, temporal, espacial, etc.) para entender los matices y el verdadero significado de una oración.
+
+--
+
+- No podemos pretender que el algoritmo tradicional para análisis de sentimientos sirve en todos los contextos. Entonces, debemos enseñar a hablar a nuestro algoritmo como un joven de color. ¿Quién nos puede ayudar? Los jóvenes de color.
+
+---
+class: inverse, middle
+
+# Lecciones:
+
+- Los datos NO hablan por sí mismos, no caen desde el cielo sin un contexto, estos vienen **COCINADOS**.
+
+- No existen datos brutos, los datos ya vienen cocinados.
+
+- No considerar el contexto permite que siga existiendo conocimiento subyugado.
+
+- No considerar el contexto permite que utilicemos técnicas inadecuadas para nuestros datos y terminemos llegando a conclusiones incorrectas.
+
+- Las conclusiones incorrectas afectan a personas.
+
+---
+class: inverse, middle
+# Entonces ¿Qué hacer?
+
+--
+### **Comunicar el contexto**
+
+--
+
+### **Restaurar el Contexto**
+
+--
+
+### **Considerar el Contexto**
+
+---
+# Comunicar el contexto
+
+--
+
+- No presentar los datos como si fueran perfectos.
+
+--
+- Reconocer, nombrar y hablar sobre las forzantes estructurales que actúan sobre nuestros datos.
+
+--
+
+- No enfocarse en lo que la comunidad oprimida no tiene, sino que dar cuenta de los privilegios de los que goza un grupo específico.
+
+--
+
+- Importancia del lenguaje.
+
+---
+&lt;img src="index_files/figure-html/unnamed-chunk-6-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+&lt;img src="index_files/figure-html/unnamed-chunk-7-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+# Restaurar el Contexto
+
+--
+
+- Concepto de ***"Biografía de los datos"***
+
+--
+
+  - ¿De dónde provienen?
+  
+  - ¿Quién los recopiló?
+  
+  - ¿Cuándo?
+  
+  - ¿Cómo fueron recolectados?
+  
+  - ¿Por qué se recolectaron?
+
+--
+
+- Microsoft usa algo similar, **datasheets for datasets** (hojas de datos para set de datos) en donde además se incluye información sobre los datos perdidos, el preprocesamiento, la mantención de los datos y las implicancias legales y éticas.
+
+---
+
+# Considerar el Contexto
+
+--
+
+- Evitar que los datos hablen por sí mismos. Sobre todo cuando fueron generados bajo diferencias de poder o con incentivos negativos durante su recopilación.
+
+--
+
+- Entender de dónde provienen los datos y su ambiente de recolección.
+
+--
+
+- Considerar el contexto también en su almacenamiento. Si los datos no hablan por sí mismos en los gráficos, menos lo hacen en hojas de cálculo.
+
+---
+class: inverse
+# Preguntas para discusión
+
+- ¿Qué actores del ecosistema de datos son responsables de proporcionar el contexto? ¿Los usuarios finales? ¿Los editores de datos? ¿Los intermediarios?
+
+- ¿Qué pasos podemos tomar para asegurar que se considere el contexto? 
+
+- ¿Cómo podemos presentar el contexto de manera más eficaz a través de la visualización de datos?
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

@@ -298,7 +298,7 @@ class: inverse, middle
 
 class: inverse, middle
 
-# Concepto clave 4: ***Conocimiento Subyugado***
+# Concepto clave 5: ***Conocimiento Subyugado***
 
 Este término describe las formas de conocimiento que se han expulsado de las instituciones principales y las conversaciones que fomentan. El conocimiento subyugado es el conocimiento que no se toma en serio, se descarta o se ignora, y que incluso es visto como irrelevante y sin importancia por aquellos que están posicionados para influir en lo que se considera "aceptable".
 

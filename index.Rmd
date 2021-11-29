@@ -350,13 +350,23 @@ class: inverse, middle
 
 # Lecciones:
 
+--
+
 - Los datos NO hablan por sí mismos, no caen desde el cielo sin un contexto, estos vienen **COCINADOS**.
+
+--
 
 - No existen datos brutos, los datos ya vienen cocinados.
 
+--
+
 - No considerar el contexto permite que siga existiendo conocimiento subyugado.
 
+--
+
 - No considerar el contexto permite que utilicemos técnicas inadecuadas para nuestros datos y terminemos llegando a conclusiones incorrectas.
+
+--
 
 - Las conclusiones incorrectas afectan a personas.
 
@@ -365,7 +375,7 @@ class: inverse, middle
 # Entonces ¿Qué hacer?
 
 --
-### **Comunicar el contexto**
+### **Comunicar el Contexto**
 
 --
 
@@ -376,7 +386,7 @@ class: inverse, middle
 ### **Considerar el Contexto**
 
 ---
-# Comunicar el contexto
+# Comunicar el Contexto
 
 --
 
